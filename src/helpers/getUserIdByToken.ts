@@ -1,5 +1,5 @@
 import jwt_decode from "jwt-decode";
-const getUserIdByToken = (event: { headers: { authorization: any } }) => {
+const getUserIdByToken = (event: any) => {
   if (event.headers) {
     const token = event.headers.authorization;
     if (token) {
