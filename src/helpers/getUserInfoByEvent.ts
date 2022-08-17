@@ -1,5 +1,5 @@
 import jwt_decode from "jwt-decode";
-const getUserInfoByToken = (event: any) => {
+const getUserInfoByEvent = (event: any) => {
   if (event.headers) {
     const token = event.headers.authorization;
     if (token) {
@@ -13,4 +13,4 @@ const getUserInfoByToken = (event: any) => {
   return null;
 };
 
-export default getUserInfoByToken;
+export default getUserInfoByEvent;
