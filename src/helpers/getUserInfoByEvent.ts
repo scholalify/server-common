@@ -1,4 +1,5 @@
 import jwt_decode from "jwt-decode";
+import { UserInfo } from "../types/model";
 const getUserInfoByEvent = (event: any) => {
   if (event.headers) {
     const token = event.headers.authorization;
@@ -6,7 +7,7 @@ const getUserInfoByEvent = (event: any) => {
       const decoded = jwt_decode(token);
       if (decoded) {
         // @ts-ignore
-        return decoded;
+        return decoded as UserInfo;
       }
     }
   }
