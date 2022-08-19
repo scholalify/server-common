@@ -9,7 +9,7 @@ export type PaperStatus =
   | "completed"
   | "cancelled";
 
-export type UserInfo = {
+export type LoggedInUserType = {
   sub: string;
   email_verified: boolean;
   iss: string;
