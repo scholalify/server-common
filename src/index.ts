@@ -3,6 +3,7 @@ export * from "./errors/custom-error";
 export * from "./errors/database-connection-error";
 export * from "./errors/not-authorized-error";
 export * from "./errors/not-found-error";
+export * from "./errors/internel-server-error";
 import getUserInfoByEvent from "./helpers/getUserInfoByEvent";
 export { getUserInfoByEvent };
 export * from "./types/model";

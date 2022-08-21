@@ -4,6 +4,11 @@
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
+  "homepage": "https://github.com/scholalify/server-common/tree/main#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scholalify/server-common.git"
+  },
   "files": [
     "build/**/*"
   ],
